@@ -6,5 +6,5 @@ function circleArea(radius) {
  
   var radius = 5; 
   var area = circleArea(radius);
-  console.log("The area of the circle is: " + area);
+  console.log("The area of the circle is: " + area.toFixed(2));
   
