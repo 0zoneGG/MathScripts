@@ -6,7 +6,7 @@ function calculateTimeAndValueToDouble(initialAmount, annualInterestRate) {
   
   // Example usage:
   var initialAmount = 500;
-  var annualInterestRate = 6; // Replace with your annual interest rate
+  var annualInterestRate = 6;
   
   var results = calculateTimeAndValueToDouble(initialAmount, annualInterestRate);
   
