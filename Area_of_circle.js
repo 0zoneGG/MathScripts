@@ -1,5 +1,5 @@
-var radius = 5;
+const radius = 5;
 
-var area = Math.PI * radius * radius;
+const area = Math.PI * radius * radius;
 
 console.log("The area of the circle is: " + area.toFixed(2));
