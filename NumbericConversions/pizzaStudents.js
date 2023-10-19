@@ -1,8 +1,8 @@
 const totalStudents = 20;
-const pizzas = 8;
+const totalPizzas = 4;
 const slicesPerPizza = 8;
 
-const totalSlices = pizzas * slicesPerPizza;
+const totalSlices = totalPizzas * slicesPerPizza;
 const slicesPerPerson = Math.floor(totalSlices / (totalStudents + 1));
 const slicesLeftOver = totalSlices % (totalStudents + 1);
 
