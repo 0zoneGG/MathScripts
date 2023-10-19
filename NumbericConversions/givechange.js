@@ -1,4 +1,4 @@
-const customerChange = 72;
+const customerChange = 97;
 
 const quaters = Math.floor(customerChange / 25);
 const dimes = Math.floor((customerChange % 25) / 10);
