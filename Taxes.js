@@ -1,10 +1,5 @@
-function calculateFederalTax(salary, taxRate) {
-    let taxWithheld = salary * (taxRate / 100);
-    return taxWithheld;
-  }
-  
-  let monthlySalary = 550;
-  let taxRate = 23;
-  let taxWithheld = calculateFederalTax(monthlySalary, taxRate);
-  console.log("The federal tax withheld is: $" + taxWithheld.toFixed(2));
-  
+var monthlySalary = 500; 
+var taxRate = 23;
+var taxWithheld = (taxRate / 100) * monthlySalary;
+
+console.log("Federal taxes withheld: $" + taxWithheld.toFixed(2));

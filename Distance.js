@@ -1,15 +1,11 @@
-function calculateDistance(x1, y1, x2, y2) {
-    let deltaX = x2 - x1;
-    let deltaY = y2 - y1;
-    let distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-    return distance;
-  }
+var x1 = 3;
+var y1 = 4; 
+var x2 = 7; 
+var y2 = 10; 
 
-  let x1 = 2;
-  let y1 = 3;
-  let x2 = 5;
-  let y2 = 7;
-  
-  let distance = calculateDistance(x1, y1, x2, y2);
-  console.log("The distance between the two points is: " + distance);
-  
+var deltaX = x2 - x1;
+var deltaY = y2 - y1;
+
+var distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+console.log("The distance between the two points is: " + distance.toFixed(2));

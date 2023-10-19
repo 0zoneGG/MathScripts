@@ -1,9 +1,5 @@
-function celsiusToFahrenheit(celsius) {
-    let fahrenheit = (celsius*9/5) +32;
-    return fahrenheit;
-  }
-  
+var celsiusTemperature = 31; 
 
-  let celsiusTemperature = 30;
-  let fahrenheitTemperature = celsiusToFahrenheit(celsiusTemperature);
-  console.log(celsiusTemperature + "°C is equal to " + fahrenheitTemperature + "°F");
+var fahrenheitTemperature = (celsiusTemperature * 9/5) + 32;
+
+console.log(celsiusTemperature + "°C is equal to " + fahrenheitTemperature.toFixed(2) + "°F");

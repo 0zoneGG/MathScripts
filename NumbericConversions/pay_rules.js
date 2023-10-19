@@ -1,17 +1,11 @@
-function calculateGrossPay(payRate, hoursWorked) {
-    if (hoursWorked <= 40) {
-      return payRate * hoursWorked;
-    } else {
-      let regularPay = payRate * 40;
-      let overtimePay = (hoursWorked - 40) * (payRate * 1.5);
-      return regularPay + overtimePay;
-    }
-  }
-  
- 
-  let payRate = 17.30; 
-  let hoursWorked = 45; 
-  
-  let grossPay = calculateGrossPay(payRate, hoursWorked);
-  console.log("Gross Pay: $" + grossPay.toFixed(2));
-  
+var payRate = 10; 
+var hoursWorked = 45; 
+
+var regularPay = (hoursWorked <= 40) ? payRate * hoursWorked : payRate * 40;
+var overtimePay = (hoursWorked > 40) ? (hoursWorked - 40) * (payRate * 1.5) : 0;
+
+var grossPay = regularPay + overtimePay;
+
+console.log("Regular Pay: $" + regularPay.toFixed(2));
+console.log("Overtime Pay: $" + overtimePay.toFixed(2));
+console.log("Gross Pay: $" + grossPay.toFixed(2));
